@@ -4,22 +4,21 @@ $config = array();
 
 // Generals
 $config['db_dsnw'] = 'sqlite:////data/roundcube.db';
-$config['des_key'] = getenv('SECRET_KEY');
+$config['des_key'] = getenv('ROUNDCUBE_SECRET_KEY');
 $config['identities_level'] = 3;
 $config['reply_all_mode'] = 1;
 
 // List of active plugins (in plugins/ directory)
 $config['plugins'] = array(
     'archive',
-    'zipdownload',
     'markasjunk',
     'managesieve'
 );
 
 // Mail servers
-$config['default_host'] = 'tls://imap';
-$config['default_port'] = 143;
-$config['smtp_server'] = 'tls://smtp';
+$config['default_host'] = 'ssl://dovecot';
+$config['default_port'] = 993;
+$config['smtp_server'] = 'ssl://postfix';
 $config['smtp_port'] = 587;
 $config['smtp_user'] = '%u';
 $config['smtp_pass'] = '%p';

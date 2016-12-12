@@ -18,7 +18,7 @@ $config['plugins'] = array(
 // Mail servers
 $config['default_host'] = 'ssl://dovecot';
 $config['default_port'] = 993;
-$config['smtp_server'] = 'ssl://postfix';
+$config['smtp_server'] = 'tls://postfix';
 $config['smtp_port'] = 587;
 $config['smtp_user'] = '%u';
 $config['smtp_pass'] = '%p';

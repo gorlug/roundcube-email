@@ -24,7 +24,7 @@ $config['smtp_user'] = '%u';
 $config['smtp_pass'] = '%p';
 
 // Sieve script management
-$config['managesieve_host'] = 'imap';
+$config['managesieve_host'] = 'dovecot';
 $config['managesieve_usetls'] = true;
 
 // We access the IMAP and SMTP servers locally with internal names, SSL
